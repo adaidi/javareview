@@ -23,12 +23,16 @@ public class TestPhone {
 		cards[0] = new Telecom();
 		cards[1] = new Mobile();
 		cards[2] = new Unicom();
+		
+		
 		phone.setCardService(cards);
 		
 		phone.start();
 		phone.timer();
 		//调用卡，发短信，打电话
 		CardService[] services = phone.getCardService();
+		
+		
 		CardService cardService = services[card];
 		
 		cardService.sendMessage();

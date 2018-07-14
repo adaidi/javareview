@@ -7,7 +7,9 @@ import java.io.ObjectOutputStream;
 
 public class PeopleTest {
 	public static void main(String[] args) throws IOException {
-		People p1 = new People();
+		People p1    = new People1();
+		
+		
 		p1.name = "张三";
 		p1.age = 23;
 		System.out.println(p1);
